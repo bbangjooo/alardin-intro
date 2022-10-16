@@ -4,6 +4,7 @@
 
 @layer base {
   html {
+    @apply scroll-smooth;
     font-family: Pretendard-Regular, system-ui, sans-serif;
   }
 }
