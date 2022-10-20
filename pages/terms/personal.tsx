@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
 import HeadMeta from "../../components/common/HeadMeta";
+import SmallLogo from "../../components/common/SmallLogo";
 
 const Personal: NextPage = () => {
   return (
@@ -11,7 +12,9 @@ const Personal: NextPage = () => {
         url="https://www.alard.in/terms/personal"
       />
       <div className="m-4 whitespace-pre-line relative overflow-hidden">
-        <div className="absolute top-0 -right-28 opacity-10 transform -rotate-12 scale-150"></div>
+        <div className="fixed top-0 -right-20 opacity-10 transform -rotate-12">
+          <SmallLogo width={360} height={360} />
+        </div>
         <div className=" border-b-2 pb-4">
           <h1 className="py-4 font-bold text-3xl">개인정보처리방침</h1>
           <span>2022.11.01 기준</span>

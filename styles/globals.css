@@ -20,6 +20,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  color: #172E48;
 }
 
 a {
@@ -29,9 +30,13 @@ a {
 
 * {
   box-sizing: border-box;
+  -ms-overflow-style: none;  /* IE and 엣지 */
+  scrollbar-width: none;  /* 파이어폭스 */
 }
 
-
+*::-webkit-scrollbar {
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -39,6 +44,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #202225;
   }
 }

@@ -55,6 +55,41 @@ module.exports = {
         product_two: "url(/images/phone-2-min.png)",
         product_three: "url(/images/phone-3-min.png)",
       },
+      keyframes: {
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fade-opacity": {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "fade-in-down": "fade-in-down 0.5s ease-in",
+        "fade-in-up": "fade-in-up 1.5s ease-in-out forwards",
+        "fade-opacity": "fade-opacity 0.5s ease-in-out",
+      },
     },
   },
   plugins: [],

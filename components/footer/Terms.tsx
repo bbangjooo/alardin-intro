@@ -7,9 +7,12 @@ const Terms = () => {
     { link: "/terms/personal", name: "개인정보처리방침" },
   ];
   return (
-    <div className="flex-row justify-center items-center my-2">
+    <div className="flex flex-row justify-center items-center m-auto my-2">
       {linkData.map(({ link, name }, index) => (
-        <div key={`link_${index}`} className="m-4 inline-block">
+        <div
+          key={`link_${index}`}
+          className="m-4 inline-block text-gray_900 font-bold dark:text-white"
+        >
           <Link href={link}>{name}</Link>
         </div>
       ))}

@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 const StoreIcons = () => (
-  <div className="w-screen h-14 flex flex-row justify-center">
-    <div className="mx-4">
+  <div className="w-full h-14 flex flex-row justify-center">
+    <div className="mx-4 item-animation">
       <Image
         width={140}
         height={64}
@@ -11,7 +11,7 @@ const StoreIcons = () => (
         alt="app-store-badge"
       />
     </div>
-    <div className="mx-4">
+    <div className="mx-4 item-animation">
       <Image
         width={140}
         height={64}
