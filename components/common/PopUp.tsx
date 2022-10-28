@@ -26,26 +26,30 @@ const Popup = ({ isHidden, setIsHidden }: IPopupProps) => {
           </HighLightText>
         </div>
         <div className="flex w-full h-4/6 flex-col self-center">
-          <Link href="#">
-            <div className="flex h-3/6 justify-center items-center hover:bg-gray_200 dark:hover:bg-[#2F3136]">
+          <Link href="https://play.google.com/store/apps/details?id=com.alardinapp">
+            <div className="flex h-3/6 justify-center items-center hover:bg-gray_200 dark:hover:bg-[#2F3136] cursor-pointer">
               <FontAwesomeIcon
                 width={28}
                 height={28}
                 className="mr-2"
                 icon={faGooglePlay}
               />
-              <a className="text-l text-gray_900 dark:text-white">Android</a>
+              <a className="text-l text-gray_900 dark:text-white cursor-pointer">
+                Android
+              </a>
             </div>
           </Link>
-          <Link href="#">
-            <div className="flex flex-row h-3/6 justify-center items-center hover:bg-gray_200 dark:hover:bg-[#2F3136]">
+          <Link href="https://apps.apple.com/kr/app/alardin/id1644668374">
+            <div className="flex flex-row h-3/6 justify-center items-center hover:bg-gray_200 dark:hover:bg-[#2F3136] cursor-pointer">
               <FontAwesomeIcon
                 width={28}
                 height={28}
                 className="mr-2"
                 icon={faAppStore}
               />
-              <a className="text-l text-gray_900 dark:text-white">iOS</a>
+              <a className="text-l text-gray_900 dark:text-white cursor-pointer">
+                iOS
+              </a>
             </div>
           </Link>
         </div>
